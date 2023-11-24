@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="src/style/style.css">
+</head>
+<body>
+    <div class="container">
+            <div class="data">
+                <div class="data__item">
+                    <p class="tittle__item">DAY</p>
+                    <input type="text" class="input__item" placeholder="DD" id="day-input" maxlength="2">
+                    <span class="error-message"></span>
+                </div>
+                <div class="data__item">
+                    <p class="tittle__item">MOUTH</p>
+                    <input type="text" class="input__item" placeholder="MM" id="mouth-input" maxlength="2">
+                    <span class="error-message"></span>
+                </div>
+                <div class="data__item">
+                    <p class="tittle__item">YEAR</p>
+                    <input type="text" class="input__item" placeholder="YYYY" id="year-input" maxlength="4">
+                    <span class="error-message"></span>
+                </div>
+            </div>
+            <div class="line">
+                <button class="btn__convert"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2" ><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+            </div>
+            <div class="answer">
+                <ul>
+                    <li class="answer__item"><span id="years-answer">- -</span><h1><b>years</b></h1></li>
+                    <li class="answer__item"><span id="mouths-answer">- -</span><h1><b>mouths</b></h1></li>
+                    <li class="answer__item"><span id="days-answer">- -</span><h1><b>days</b></h1></li>
+                </ul>
+            </div>
+    </div>
+    <script src="src/js/app.js"></script>
+</body>
+</html>
